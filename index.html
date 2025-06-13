@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Produk & Pembayaran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .qris-section {
+      margin-top: 25px;
+      display: none;
+    }
+
+    .qris-section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+  </style>
+
+  <script>
+    function showQRIS() {
+      document.getElementById('qris-section').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="product-card">
+    <img src="https://files.catbox.moe/w22xjy.jpg" alt="Produk">
+    <h1>SEWA BOT PUSH KONTAK</h1>
+    <p>TF SESUAI HARI YG DI SEWA</p>
+    <p class="price">SESUAIKAN</p>
+
+    <button class="btn" onclick="showQRIS()">Bayar via QRIS</button>
+
+    <div id="qris-section" class="qris-section">
+      <p>Scan QR berikut untuk melakukan pembayaran:</p>
+      <img src="https://files.catbox.moe/l8jhob.jpg" alt="QRIS Code">
+      <p>Setelah bayar, kirim bukti via WhatsApp:</p>
+      <a class="btn" href="https://wa.me/6285169237405?text=Halo%20saya%20sudah%20transfer" target="_blank">
+        Chat WhatsApp
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
